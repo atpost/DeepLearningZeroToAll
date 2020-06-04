@@ -1,6 +1,8 @@
 # Lab 3 Minimizing Cost
 # This is optional
-import tensorflow as tf
+import tensorflow.compat.v1 as tf  # modified from 'import tensorflow as tf'
+
+tf.disable_v2_behavior()  # added due to code only available with TF version 1
 
 # tf Graph Input
 X = [1, 2, 3]
